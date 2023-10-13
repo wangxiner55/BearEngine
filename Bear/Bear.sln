@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hive", "Hive\Hive.vcxproj", "{6A9B9213-C0D7-4F80-B698-E40D6A0D260D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bear", "Bear\Bear.vcxproj", "{FA21FACE-7F84-4716-A7A4-BADCBA62BB8A}"
+EndProject
+
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA21FACE-7F84-4716-A7A4-BADCBA62BB8A}.Debug|x64.ActiveCfg = Debug|x64
+		{FA21FACE-7F84-4716-A7A4-BADCBA62BB8A}.Debug|x64.Build.0 = Debug|x64
+		{FA21FACE-7F84-4716-A7A4-BADCBA62BB8A}.Release|x64.ActiveCfg = Release|x64
+		{FA21FACE-7F84-4716-A7A4-BADCBA62BB8A}.Release|x64.Build.0 = Release|x64
+		{6A9B9213-C0D7-4F80-B698-E40D6A0D260D}.Debug|x64.ActiveCfg = Debug|x64
+		{6A9B9213-C0D7-4F80-B698-E40D6A0D260D}.Debug|x64.Build.0 = Debug|x64
+		{6A9B9213-C0D7-4F80-B698-E40D6A0D260D}.Release|x64.ActiveCfg = Release|x64
+		{6A9B9213-C0D7-4F80-B698-E40D6A0D260D}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A1E01AD-A3EF-4D63-8203-D58355F2DBD3}
+	EndGlobalSection
+EndGlobal
