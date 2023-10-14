@@ -4,6 +4,9 @@
     <Filter Include="Bear">
       <UniqueIdentifier>{1FFB827C-0B32-840D-B41E-6A10A034000F}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Bear\Events">
+      <UniqueIdentifier>{230E6909-8FC3-E1FE-18B8-DBD5846CD802}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Bear.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Bear\EntryPoint.h">
       <Filter>Bear</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bear\Events\ApplicationEvent.h">
+      <Filter>Bear\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bear\Events\Event.h">
+      <Filter>Bear\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bear\Events\KeyEvent.h">
+      <Filter>Bear\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bear\Events\MouseEvent.h">
+      <Filter>Bear\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Bear\log.h">
       <Filter>Bear</Filter>

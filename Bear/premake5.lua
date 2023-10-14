@@ -27,13 +27,15 @@ project "Bear"
 
     includedirs
     {
+        
+        "%{prj.name}/src",
         "%{prj.name}/vendor/spdlog/include"
     }
 
     filter "system:windows"
         cppdialect "C++17"
         staticruntime "On"
-        systemversion "10.0.22000.0"
+        systemversion "latest"
 
 
 
