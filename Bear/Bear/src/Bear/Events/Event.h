@@ -1,7 +1,6 @@
 #pragma once
 #include "../Core.h"
 
-#include <iostream>
 #include <string>
 #include <functional>
 
@@ -36,7 +35,7 @@ namespace BEngine
 								virtual const EventType GetEventType() const override {return GetStaticType(); }\
 								virtual const char* GetName() const override{return #type; }
 
-#define EVENT_CLASS_CATEGORY(category) virtual int GetCategoryFlags const override {return category; }
+#define EVENT_CLASS_CATEGORY(category) virtual int GetCategoryFlags() const override { return category; }
 
 
 
@@ -62,14 +61,17 @@ namespace BEngine
 
 	class EventDispatcher
 	{
-		template<typename T>
-		using EventFn = std::function<bool<T&>>;
+		
 	public:
+
+		template<typename T>
+		using EventFn = std::function<bool(T&)>;
 
 		EventDispatcher(Event& event)
 			:m_Event(event){}
 
 		template<typename T>
+		
 		bool Dispatch(EventFn<T> func)
 		{
 			if (m_Event.GetEventType() == T::GetStaticType())
@@ -88,4 +90,5 @@ namespace BEngine
 	{
 		return os << e.ToString();
 	}
+
 }
